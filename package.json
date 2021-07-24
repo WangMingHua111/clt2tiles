@@ -17,7 +17,8 @@
     "node": ">=6"
   },
   "files": [
-    "bin"
+    "bin",
+    "lib"
   ],
   "preferGlobal": true,
   "author": "wangminghua",
