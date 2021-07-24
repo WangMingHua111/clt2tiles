@@ -1,0 +1,29 @@
+{
+  "name": "clt2tiles",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/clt2tiles.js",
+  "bin": {
+    "clt2tiles": "bin/clt2tiles"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "3dtiles",
+    "clt"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "bin"
+  ],
+  "preferGlobal": true,
+  "author": "wangminghua",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.0.0",
+    "sqlite3": "^5.0.2"
+  }
+}

@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const path = require('path')
+const program = require('commander');
+
+program
+    .version('0.0.1')
+    .option('-o, --outdir <path>', 'change the output directory')
+    .option('-a, --alias <name>', 'change the output directory alias,defalut is "3dtiles"')
+    .option('-z, --zip', 'using zip decompression')
+
+program.parse(process.argv)
+
+const clt2tiles = require('../lib/clt2tiles.js').defalut
+program.args.forEach(clt => {
+    try {
+        console.log(program.opts())
+        clt2tiles(clt, program.opts(), program.args.length > 1 ? path.parse(clt).name : undefined)
+    } catch (e) {
+        console.log(e)
+    }
+});
