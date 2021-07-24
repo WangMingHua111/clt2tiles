@@ -1,0 +1,2 @@
+# clt2tiles
+将Cesuim实验室定义的clt文件提取为3dtiles目录
