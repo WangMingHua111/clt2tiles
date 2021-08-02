@@ -10,6 +10,8 @@ program
     .option('-o, --outdir <path>', 'change the output directory')
     .option('-a, --alias <name>', 'change the output directory alias,defalut is "3dtiles"')
     .option('-z, --zip', 'using zip decompression')
+    .option('-p, --page', 'whether to enable paging download, defalut is false')
+    .option('-s, --size <count>', 'number of pages，defalut is 1000')
 
 program.parse(process.argv)
 
