@@ -8,6 +8,7 @@
 # use
 
   
+  clt2tiles 3dtiles.clt -z -p -s 1000 // 提取clt文件，并采用zip解压，通过分页的形式以每页1000个tiles解包。
   
   clt2tiles 3dtiles.clt // 提取clt文件
   
